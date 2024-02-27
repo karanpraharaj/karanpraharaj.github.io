@@ -73,7 +73,7 @@ x_username: intrepidindian # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: karanpraharaj # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: 0zG0amMAAAAJ
+scholar_userid: 
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -123,7 +123,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: karan praharaj # blog_name will be displayed in your blog page
+blog_name: karanpraharaj # blog_name will be displayed in your blog page
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
