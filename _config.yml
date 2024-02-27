@@ -71,7 +71,7 @@ github_username: karanpraharaj # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: intrepidindian # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: https://linkedin.com/in/karan-praharaj # your LinkedIn user name
+linkedin_username: karan-praharaj # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: https://scholar.google.ca/citations?user=0zG0amMAAAAJ&hl=en # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -123,7 +123,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: karanpraharaj # blog_name will be displayed in your blog page
+blog_name: karan praharaj # blog_name will be displayed in your blog page
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
@@ -159,7 +159,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   - name: medium.com
-    rss_url: https://medium.com/@karanpraharaj
+    rss_url: https://medium.com/@karanpraharaj/feed
 
 # -----------------------------------------------------------------------------
 # Collections
