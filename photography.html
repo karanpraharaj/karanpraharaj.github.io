@@ -81,9 +81,18 @@
 
                 currentPhotos = await response.json();
 
+                // Sort chronologically (newest first)
+                currentPhotos.sort((a, b) => new Date(b.date) - new Date(a.date));
+
                 if (currentPhotos.length === 0) {
                     emptyMessage.style.display = 'block';
                     return;
+                }
+
+                // Format date for display (e.g., "Dec 23, 2025")
+                function formatDate(dateStr) {
+                    const d = new Date(dateStr);
+                    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
                 }
 
                 gallery.innerHTML = currentPhotos.map((photo, index) => `
@@ -91,7 +100,8 @@
                         <img src="photos/img/${photo.file}" alt="${photo.caption}" loading="lazy">
                         <figcaption>
                             <span class="photo-caption">${photo.caption}</span>
-                            <span class="photo-meta">${photo.location}${photo.date ? ', ' + photo.date : ''}</span>
+                            <span class="photo-location">${photo.location}</span>
+                            <span class="photo-date">${formatDate(photo.date)}</span>
                         </figcaption>
                     </figure>
                 `).join('');
