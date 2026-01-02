@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Identification of Lexico-Semantic Word Relations - Karan Praharaj">
+    <title>Lexico-Semantic Word Relations — Karan Praharaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="logo">Karan Praharaj</a>
+        <nav class="nav">
+            <a href="/#about">About</a>
+            <a href="/writing.html">Writing</a>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <main class="main main-top">
+        <article class="post">
+            <header class="post-header">
+                <h1>Identification of Lexico-Semantic Word Relations</h1>
+                <p class="post-subtitle">A beginner's guide to word vectors, patches, and attention mechanisms for NLP.
+                </p>
+                <p class="post-date">May 24, 2020</p>
+            </header>
+
+            <div class="post-content">
+                <p>When I ask you to "please bear with me", you prepare yourself with the prospect of having to put up
+                    with me. If you are told "this teddy bear is fluffy", your brain conjures up the image of a soft,
+                    lovable, furry toy that toddlers take to bed. If you read about bears being endangered, you think of
+                    a polar bear somewhere in the arctic sea ice. And when they will tell you on the news next week that
+                    the coronavirus crisis has plunged us into the worst bear market of our generation, you will
+                    instinctively know that they are speaking about stocks. Your knowledge of the English language,
+                    along with your ability to understand context-dependencies, lexical and syntactic structures, and
+                    linguistic nuances helps you differentiate between four senses of the same word. You take it for
+                    granted and barely think about it but it has taken you years to acquire this ability. You learn,
+                    directly or indirectly, from your personal experiences. You learn through making associations
+                    between contexts, information, behaviours, and responses. The cascade of neurocognitive reactions
+                    that are set off as you subconsciously trigger a set of neutrons to communicate or listen is nothing
+                    short of a wonder. All of this together with your genetic endowment, makes language effortless for
+                    you.</p>
+
+                <p>On the other hand, understanding human language is a difficult problem for computers. Unlike you and
+                    me, computers do not have the privilege of language training the way we do. Even programming
+                    languages aren't directly interpreted by them - they are first converted to low-level machine
+                    language. True <em>machine code</em> is merely a stream of raw, usually binary (1s and 0s), data.
+                    While humans acquire the ability to parse, process, infer and communicate, for the computer, any
+                    word picked out from a human language is unintelligible gibberish until it is adequately trained to
+                    understand the language.</p>
+
+                <p>This task of teaching and empowering machines to understand language just as we do, is called Natural
+                    Language Processing or NLP. NLP is a branch of artificial intelligence and it is an umbrella itself
+                    for many other subproblems. Daily examples of such problems are search, speech recognition,
+                    translation, summarization, question-answering etc. But all of this begs the question - if computers
+                    can understand nothing but 1s and 0s, how can they make sense of the complexities of human language?
+                </p>
+
+                <h3>Word Vectors — Representing words in the form of numbers</h3>
+
+                <p>Consider a space where all words in the English language are populated based on their semantic
+                    character. This imaginary space is such that words sharing similar descriptions or concepts share
+                    similar spacial properties. For instance, the words "cat" and "dog" would be in close vicinity of
+                    each other because the idea of a cat is very similar to the idea of a dog. Both are quadrupedal,
+                    domestic species that make for cute pets. For words that are not similar in meaning but represent
+                    the same concept, the positions of the words relative to each other encapsulate the relationship. In
+                    the semantic space, the relative position of "king" to the position of "queen" would be similar to
+                    the relative positions between "man" and "woman" or "boy" and "girl", because the defining concept
+                    that separates the words in all three cases is the same — gender.</p>
+
+                <figure>
+                    <img src="../img/wv3.png" alt="Word vector relationships">
+                </figure>
+
+                <p>In the example semantic space below, you can see how the vectors for animals like lion, tiger,
+                    cheetah, and elephant are very close together. This is intuitive because they are often discussed in
+                    similar contexts; for example, these animals are big, wild and, potentially dangerous — indeed, the
+                    descriptive word "wild" maps quite closely to this group of animals.</p>
+
+                <figure>
+                    <img src="../img/wv2.png" alt="Semantic space visualization">
+                </figure>
+
+                <p>Since words in their purest form cannot be interpreted by computers, we dumb them down by mapping the
+                    concepts and ideas that are inherent to the words into a representative set of numbers for each
+                    word. These sets of numbers are generated or "learned" algebraically by "neural networks" (a type of
+                    algorithm) and are called "word vectors". These word vectors bear the ability to capture information
+                    about semantic relationships and syntactic structures across collections of words. Approaches to
+                    generating word vectors build on Firth's (1957) <em>distributional hypothesis</em> which states:</p>
+
+                <blockquote>
+                    <p>"You shall know a word by the company it keeps."</p>
+                </blockquote>
+
+                <p>Put differently, <strong>words that share similar contexts tend to have similar meanings</strong>.
+                </p>
+
+                <p>Word vectors can have any number of dimensions, although the standard number is usually 50, 100 or
+                    300. Each of these dimensions represents a meaning or an abstract concept, the degree of which
+                    depends upon the numeric weight of the word on that particular dimension.</p>
+
+                <figure>
+                    <img src="../img/wv1.png" alt="Word vector dimensions example">
+                </figure>
+
+                <p>In the figure above, for better understanding, we are imagining that each dimension captures a
+                    clearly defined meaning as opposed to an abstract idea. For example, if you imagine that the third
+                    dimension represents the concept of "fluffiness", then each word's weight on that dimension
+                    represents how closely it relates to that concept. It makes perfect sense for the rabbit to have the
+                    highest fluffiness factor at 0.45. This is quite a large simplification of word vectors as the
+                    dimensions do not hold such clearly defined meanings in reality, but it is a useful and intuitive
+                    way to wrap your head around the concept of word vector dimensions.</p>
+
+                <h3>Lexical Relation Resolution</h3>
+
+                <p>My current research work is focused on a problem called lexical relation resolution. A lexical
+                    relation is a culturally recognized pattern of association that exists between lexical items (a
+                    word, a part of a word, or a chain of words) in a language. For example, the lexical relation
+                    between "open" and "close" is that of antonymy, whereas "close" and "shut" are connected by a
+                    synonymy relationship. Other asymmetric lexico-semantic relations include co-hyponymy (e.g. phone ↔
+                    monitor), hypernymy (e.g. phone → speakerphone) or meronymy (e.g. phone → mouthpiece), etc.</p>
+
+                <p>Recognizing the exact nature of the semantic relation holding between a given pair of words is
+                    crucial and forms the basis for all the other NLP applications (question-answering, summarization,
+                    speech recognition etc.) that I mentioned above.</p>
+
+                <p>Several methods have been proposed in the past to discriminate between multiple semantic relations
+                    that hold between a pair of words. But, this continues to remain a difficult task, especially when
+                    it comes to distinguishing between certain relations. (e.g synonymy and hyperonymy).</p>
+
+                <h3>Research Work — Patches, Attention, Cuboid</h3>
+
+                <p>To solve this problem, our work proposes to investigate the introduction of related words in the
+                    neighbourhood of a particular word and gauge the effect it has on the prediction accuracy of word
+                    relations. Our original hypothesis was that if each word is augmented by the word vectors of a fixed
+                    number of neighbouring words (or "patches"), improved performance might be attained.</p>
+
+                <p>Many similarity measures exist to account for the lexical semantic relation that links two words. In
+                    our case, we use the cosine similarity measure which has proven to be successful in the past for a
+                    variety of semantic relations. To put it in plain speak, cosine similarity is a metric used to
+                    determine how similar two entities are. We extend the cosine similarity to patches in a
+                    straightforward manner. The similarity between two patches is the set of one-to-one cosine
+                    similarity measures between all words in their respective patches.</p>
+
+                <figure>
+                    <img src="../img/patch1.png" alt="Patch similarity visualization">
+                    <figcaption>Examples of four different patches along with their intra-patch similarity scores.
+                    </figcaption>
+                </figure>
+
+                <p>It was decided that in addition to preserving concept-centrality <em>within</em> patches, it also
+                    makes sense to preserve relation-centrality <em>between</em> patches. It is important to acknowledge
+                    that only certain words in the two patches may be central to the decision of whether two words are
+                    in a lexical semantic relation. If two patches share a set of close semantically related words that
+                    are central to both concepts, the decision process should intuitively be more reliable.</p>
+
+                <p>However, our initial findings showed that the direct introduction of neighbour words did not lead to
+                    improvements. We figured that this was mainly due to a loss of concept-centrality that took place as
+                    a result of the change in strategy. If word relations are to be assessed by juxtapositioning two
+                    patches instead of two words, the required focus on the original word may be diluted.</p>
+
+                <p>The next logical step was to somehow weigh the word vectors based on their centrality to the concept.
+                    To do this, we introduced an <strong>attention mechanism</strong> based on the PageRank algorithm
+                    (which is one of the algorithms used by Google for their web search. PageRank was developed to
+                    measure the importance of website pages). We use it to assign a weight of centrality to each of the
+                    word neighbours in the patch. The more a word is central in the patch, the higher the score it
+                    receives. These scores are then to be used as attention weights to the corresponding word vector
+                    representations of the neighbours. The objective of this mechanism is to improve the predictive
+                    ability of our system based on the importance score of each word vector in the patch. We found that
+                    when deployed in combination with the correct architecture, attention-adjusted patches bolstered our
+                    model and gave a significant boost to previous results.</p>
+
+                <p>Indeed, average improvements can reach 10.6% for binary classification (to make a decision between
+                    two relations) and 8% for multi-class classification (decision between more than two relations) over
+                    non-patch baseline approaches. As things stand, we believe that we might get even better results if
+                    we construct a cuboid, where the word vectors of two words, instead of being collapsed to a single
+                    similarity value, are preserved to a greater extent by only compressing them from 600 dimensions to
+                    300 dimensions.</p>
+
+                <p>As for NLP in general, there is no doubt whatsoever in saying that we are still decades, or at best,
+                    years, away from being anywhere close to designing an artificial intelligence that speaks and
+                    communicates like us. The amount of data needed today to train a computer well for the simplest of
+                    tasks is tremendous. We have neither reached the peak in terms of quality of data representations
+                    nor do we have enough computational power to scale models trained on current data representations
+                    beyond a particular extent.</p>
+
+                <p>On reflection though, it will never stop being crazy to me that with a little knowledge of
+                    mathematics, sufficient computational power and a decent familiarity with a programming language,
+                    you can teach a completely inanimate object to understand the language of our species. It is quite
+                    surreal when you think about it.</p>
+
+                <hr>
+
+                <p><em>This blog post is based on the work carried out with Nesrine Bannour and Houssam Akhmouch, under
+                        the supervision of Prof. Gaël Dias.</em></p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; 2026 Karan Praharaj</p>
+        <nav class="footer-nav">
+            <a href="mailto:hello@karanpraharaj.com">Email</a>
+            <a href="https://twitter.com/karanpraharaj" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://github.com/karanpraharaj" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
