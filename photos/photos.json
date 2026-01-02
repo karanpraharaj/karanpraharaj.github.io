@@ -1,14 +1,8 @@
 [
   {
-    "file": "example-1.jpg",
-    "caption": "Your first photo caption here",
-    "location": "City, Country",
-    "date": "2024"
-  },
-  {
-    "file": "example-2.jpg",
-    "caption": "Another photo caption",
-    "location": "Another Place",
-    "date": "2024"
+    "file": "emerald-dec-25.jpg",
+    "caption": "Emerald Lake, CO. December 23, 2025",
+    "location": "Emerald Lake, CO",
+    "date": "2025"
   }
 ]
