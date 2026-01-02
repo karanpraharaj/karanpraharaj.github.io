@@ -30,6 +30,7 @@
 
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -108,7 +109,12 @@ body {
 
 .hero {
     max-width: var(--max-width);
-    padding: 4rem 0;
+    padding: 0;
+    padding-top: 20vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .hero h1 {
@@ -127,6 +133,51 @@ body {
     color: var(--color-text-muted);
     line-height: 1.7;
     max-width: 580px;
+}
+
+/* Main column layout for homepage with about */
+.main-column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+.about {
+    max-width: var(--max-width);
+    padding: 3rem 0 4rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.about h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+.about del {
+    text-decoration: line-through;
+    color: var(--color-text-muted);
+}
+
+.about ins {
+    text-decoration: none;
+    font-style: italic;
 }
 
 /* ============================================
@@ -370,6 +421,73 @@ body {
 
 .nav a.active {
     color: var(--color-text);
+}
+
+/* ============================================
+   Photography Page
+   ============================================ */
+.photography-page {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.photography-page h1 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.photo-item {
+    margin: 0;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.photo-item:hover img {
+    opacity: 0.9;
+}
+
+.photo-item figcaption {
+    padding-top: 0.75rem;
+}
+
+.photo-caption {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.4;
+}
+
+.photo-meta {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+}
+
+.gallery-empty,
+.no-js-message {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 2rem;
 }
 
 /* ============================================

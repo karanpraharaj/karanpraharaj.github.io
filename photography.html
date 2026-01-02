@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photography by Karan Praharaj">
+    <title>Photography — Karan Praharaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="logo">Karan Praharaj</a>
+        <nav class="nav">
+            <a href="/#about">About</a>
+            <a href="/writing.html">Writing</a>
+            <a href="/photography.html" class="active">Photography</a>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <main class="main main-top">
+        <section class="photography-page">
+            <h1>Photography</h1>
+            <p class="page-intro">Places I've been, things I've seen.</p>
+
+            <div id="photo-gallery" class="photo-gallery">
+                <!-- Photos will be loaded here by JavaScript -->
+                <noscript>
+                    <p class="no-js-message">Enable JavaScript to view the photo gallery.</p>
+                </noscript>
+            </div>
+
+            <p class="gallery-empty" id="gallery-empty" style="display: none;">
+                No photos yet. Check back soon!
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; 2026 Karan Praharaj</p>
+        <nav class="footer-nav">
+            <a href="mailto:hello@karanpraharaj.com">Email</a>
+            <a href="https://twitter.com/karanpraharaj" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://github.com/karanpraharaj" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </footer>
+
+    <script>
+        async function loadPhotos() {
+            const gallery = document.getElementById('photo-gallery');
+            const emptyMessage = document.getElementById('gallery-empty');
+
+            try {
+                const response = await fetch('photos/photos.json');
+                if (!response.ok) throw new Error('Could not load photos');
+
+                const photos = await response.json();
+
+                if (photos.length === 0) {
+                    emptyMessage.style.display = 'block';
+                    return;
+                }
+
+                gallery.innerHTML = photos.map(photo => `
+                    <figure class="photo-item">
+                        <img src="photos/img/${photo.file}" alt="${photo.caption}" loading="lazy">
+                        <figcaption>
+                            <span class="photo-caption">${photo.caption}</span>
+                            <span class="photo-meta">${photo.location}${photo.date ? ', ' + photo.date : ''}</span>
+                        </figcaption>
+                    </figure>
+                `).join('');
+
+            } catch (error) {
+                console.log('Photo gallery not loaded:', error.message);
+                emptyMessage.style.display = 'block';
+            }
+        }
+
+        loadPhotos();
+    </script>
+</body>
+
+</html>

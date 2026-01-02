@@ -1,0 +1,14 @@
+[
+  {
+    "file": "example-1.jpg",
+    "caption": "Your first photo caption here",
+    "location": "City, Country",
+    "date": "2024"
+  },
+  {
+    "file": "example-2.jpg",
+    "caption": "Another photo caption",
+    "location": "Another Place",
+    "date": "2024"
+  }
+]
