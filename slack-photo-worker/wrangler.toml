@@ -1,0 +1,13 @@
+name = "slack-photo-uploader"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+GITHUB_REPO = "karanpraharaj/karanpraharaj.github.io"
+GITHUB_BRANCH = "main"
+SLACK_CHANNEL_ID = "" # Will be set via secrets
+
+# Secrets (set via wrangler secret put):
+# SLACK_BOT_TOKEN
+# GITHUB_TOKEN
+# SLACK_SIGNING_SECRET
