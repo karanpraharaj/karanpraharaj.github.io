@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive 3D visualization of document embeddings using the Enron email corpus">
+    <title>Embedding Space Explorer — Karan Praharaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="https://karanpraharaj.com" class="logo">Karan Praharaj</a>
+        <nav class="nav">
+            <a href="https://karanpraharaj.com/#about">About</a>
+            <a href="https://karanpraharaj.com/writing.html">Writing</a>
+            <a href="https://karanpraharaj.com/photography.html">Photography</a>
+            <a href="https://karanpraharaj.com/projects.html">Projects</a>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <main class="main main-top">
+        <section class="explorer-page">
+            <h1>Embedding Space Explorer</h1>
+            <p class="page-intro">Visualizing how neural networks understand document similarity using the Enron email corpus.</p>
+
+            <div class="explorer-controls">
+                <div class="control-row">
+                    <div class="control-group">
+                        <label class="control-label">Color by</label>
+                        <select id="color-by" class="control-select">
+                            <option value="department">Department</option>
+                            <option value="topic">Topic</option>
+                            <option value="sender">Sender</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Model</label>
+                        <select id="model-select" class="control-select">
+                            <option value="minilm">MiniLM (Generic)</option>
+                            <option value="legal">Legal-BERT (Fine-tuned)</option>
+                        </select>
+                    </div>
+                    <div class="control-group search-group">
+                        <label class="control-label">Search</label>
+                        <div class="search-row">
+                            <input type="text" id="search-input" class="search-input" placeholder="Search documents...">
+                            <button id="search-btn" class="search-btn">Find</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization-wrapper">
+                <div class="visualization-container">
+                    <div id="canvas-container"></div>
+                    <div class="viz-legend" id="legend"></div>
+                    <div class="viz-hint">Drag to rotate · Scroll to zoom · Click a point to explore</div>
+                </div>
+
+                <div id="detail-panel" class="detail-panel">
+                    <div class="detail-placeholder">
+                        <p>Click on any point to see email details and nearest neighbors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tooltip" class="tooltip"></div>
+
+            <section class="explanation">
+                <h2>How It Works</h2>
+                <p>This visualization projects high-dimensional document embeddings into 3D space using UMAP. Each point represents an email from the Enron corpus—a dataset of ~500,000 emails released during the 2001 investigation.</p>
+
+                <p>Documents that appear close together are semantically similar according to the embedding model. You can explore how different neural networks organize this space differently, and how fine-tuning on legal text changes what "similarity" means.</p>
+
+                <h3>What You Can Do</h3>
+                <ul>
+                    <li><strong>Hover</strong> over any point to see an email preview</li>
+                    <li><strong>Click</strong> a point to see the full email and its nearest neighbors</li>
+                    <li><strong>Search</strong> to find documents containing specific terms</li>
+                    <li><strong>Switch models</strong> to see how fine-tuning reorganizes the embedding space</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>In retrieval-augmented generation (RAG) systems, embedding quality directly determines what documents get retrieved. Understanding how embeddings cluster—and where they fail—is essential for building reliable document search in high-stakes domains like legal e-discovery.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; 2026 Karan Praharaj</p>
+        <nav class="footer-nav">
+            <a href="mailto:hello@karanpraharaj.com">Email</a>
+            <a href="https://x.com/intrepidindian" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://github.com/karanpraharaj" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </footer>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading embedding space...</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js?v=5"></script>
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+{
+  "emails": [
+    {
+      "subject": "California Power Crisis - Urgent Update",
+      "sender": "Kenneth Lay",
+      "to": "All Employees",
+      "date": "Dec 15, 2000",
+      "body": "As you are aware, California is experiencing significant power supply issues. Our trading desk has been actively managing our positions in the western markets. Please refer all media inquiries to our communications team.",
+      "department": "Executive",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "RE: Natural Gas Swap Agreement",
+      "sender": "Legal Department",
+      "to": "Trading Desk",
+      "date": "Jan 8, 2001",
+      "body": "Attached please find the revised swap agreement for your review. The counterparty has agreed to our proposed modifications to the termination clause. Please sign and return by end of week.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Q4 Financial Results Preview",
+      "sender": "Andrew Fastow",
+      "to": "Executive Team",
+      "date": "Jan 20, 2001",
+      "body": "Our preliminary Q4 numbers are looking strong. Revenue from wholesale services exceeded projections by 12%. The special purpose entities continue to perform as expected. Full report to follow.",
+      "department": "Finance",
+      "topic": "Financial"
+    },
+    {
+      "subject": "Team lunch Friday",
+      "sender": "Sally Beck",
+      "to": "Operations Team",
+      "date": "Feb 2, 2001",
+      "body": "Hey everyone! Let's do lunch this Friday at the usual place to celebrate finishing the Q1 planning cycle. My treat. Let me know if you can make it!",
+      "department": "Operations",
+      "topic": "Personal"
+    },
+    {
+      "subject": "West Power Position Update",
+      "sender": "Tim Belden",
+      "to": "Trading Management",
+      "date": "Feb 15, 2001",
+      "body": "Current west coast power position summary: We are long 500 MW for Feb delivery and have secured additional transmission capacity for March. Market conditions remain favorable for our strategy.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "System Maintenance Window - Feb 20",
+      "sender": "IT Infrastructure",
+      "to": "All Users",
+      "date": "Feb 18, 2001",
+      "body": "Scheduled maintenance on the trading system database will occur Sunday Feb 20 from 2am-6am CST. All systems should be fully operational by market open Monday. Please save all work before leaving Friday.",
+      "department": "Operations",
+      "topic": "Technical"
+    },
+    {
+      "subject": "Forward Contract Documentation",
+      "sender": "Mark Taylor",
+      "to": "Legal Review",
+      "date": "Mar 5, 2001",
+      "body": "Please review the attached forward contract for natural gas delivery. We need confirmation that the force majeure clause adequately protects our interests given recent market volatility.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Meeting Request: Quarterly Review",
+      "sender": "Jeff Skilling",
+      "to": "Division Heads",
+      "date": "Mar 12, 2001",
+      "body": "Please block your calendars for the quarterly business review on March 28th. Each division should prepare a 15-minute presentation covering YTD performance and Q2 outlook.",
+      "department": "Executive",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Electricity Price Forecast Model",
+      "sender": "Research Team",
+      "to": "Trading Analytics",
+      "date": "Mar 20, 2001",
+      "body": "We've updated our electricity price forecast model with the latest weather data and demand projections. The model now predicts higher volatility in April due to expected temperature swings.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Budget Reallocation Request",
+      "sender": "Finance Department",
+      "to": "Cost Center Managers",
+      "date": "Apr 1, 2001",
+      "body": "Due to revised revenue projections, we are asking all departments to identify potential cost savings of 5%. Please submit your proposals by April 15th for executive review.",
+      "department": "Finance",
+      "topic": "Financial"
+    },
+    {
+      "subject": "California Regulatory Filing",
+      "sender": "Government Affairs",
+      "to": "Legal Team",
+      "date": "Apr 10, 2001",
+      "body": "FERC has requested additional documentation regarding our California trading activities. Please compile all relevant records from Q4 2000 and Q1 2001 for submission.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Happy Birthday Mike!",
+      "sender": "Trading Floor",
+      "to": "Mike Grigsby",
+      "date": "Apr 15, 2001",
+      "body": "Happy birthday! Cake in the break room at 3pm. Don't be late - last time you missed your own party! Hope you have a great day.",
+      "department": "Trading",
+      "topic": "Personal"
+    },
+    {
+      "subject": "Pipeline Capacity Constraints",
+      "sender": "Gas Operations",
+      "to": "Commercial Team",
+      "date": "May 1, 2001",
+      "body": "We're seeing significant constraints on the SoCal border. Available capacity has dropped 15% due to maintenance. Recommend hedging physical positions accordingly.",
+      "department": "Operations",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Summer Intern Onboarding",
+      "sender": "HR Department",
+      "to": "Department Managers",
+      "date": "May 10, 2001",
+      "body": "Summer interns will arrive June 1st. Please ensure workspace is ready and initial projects are identified. Orientation schedule attached.",
+      "department": "Other",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Risk Management Report",
+      "sender": "Risk Control",
+      "to": "Executive Committee",
+      "date": "May 20, 2001",
+      "body": "Monthly risk report attached. VaR remains within approved limits. Notable increase in credit exposure to certain California counterparties - recommend monitoring closely.",
+      "department": "Finance",
+      "topic": "Financial"
+    },
+    {
+      "subject": "Power Market Update - 156",
+      "sender": "John Lavorato",
+      "to": "Louise Kitchen",
+      "date": "Mar 15, 2001",
+      "body": "Latest power market analysis shows continued volatility in the western region. Recommend maintaining current hedge positions until further notice.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Contract Review Required - 892",
+      "sender": "Mark Haedicke",
+      "to": "Sara Shackleton",
+      "date": "Jun 8, 2001",
+      "body": "Please review the attached master agreement amendments. Counterparty is requesting modifications to credit support annex.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Team Meeting - 443",
+      "sender": "Greg Whalley",
+      "to": "David Delainey",
+      "date": "Apr 22, 2001",
+      "body": "Scheduling follow-up discussion on Q2 targets. Please confirm your availability for Thursday afternoon.",
+      "department": "Executive",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Gas Trading Summary - 217",
+      "sender": "Louise Kitchen",
+      "to": "Vince Kaminski",
+      "date": "Feb 28, 2001",
+      "body": "Daily trading summary attached. Notable activity in the March-April spread. Volume up 20% week over week.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Compliance Update - 334",
+      "sender": "Richard Shapiro",
+      "to": "James Steffes",
+      "date": "Jul 3, 2001",
+      "body": "New FERC regulations effective next month. Training sessions being scheduled for all trading personnel.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Project Update - 667",
+      "sender": "Steven Kean",
+      "to": "Elizabeth Sager",
+      "date": "Aug 12, 2001",
+      "body": "Project milestone achieved ahead of schedule. Next phase kickoff meeting scheduled for Monday.",
+      "department": "Operations",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "West Coast Position - 512",
+      "sender": "Tim Belden",
+      "to": "John Lavorato",
+      "date": "Sep 5, 2001",
+      "body": "Current western position update: Long 750 MW for October delivery. Transmission secured through November.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Settlement Terms - 289",
+      "sender": "Tana Jones",
+      "to": "Mark Taylor",
+      "date": "Oct 18, 2001",
+      "body": "Settlement documentation ready for review. Please confirm terms before end of business Friday.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "FYI - 145",
+      "sender": "David Delainey",
+      "to": "Greg Whalley",
+      "date": "Jan 25, 2001",
+      "body": "Sharing update from yesterday's board meeting. Key decisions summarized in attached memo.",
+      "department": "Executive",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Price Alert: California - 778",
+      "sender": "Research Team",
+      "to": "Trading Analytics",
+      "date": "Dec 20, 2000",
+      "body": "Spot prices in California reached new highs today. Market fundamentals suggest continued upward pressure.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Regulatory Filing - 901",
+      "sender": "Government Affairs",
+      "to": "Legal Team",
+      "date": "Nov 8, 2001",
+      "body": "Quarterly regulatory filing due next week. Please ensure all documentation is complete and reviewed.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Action Required - 556",
+      "sender": "Sally Beck",
+      "to": "Operations Team",
+      "date": "May 25, 2001",
+      "body": "Year-end audit preparation checklist attached. Please complete your sections by June 15th.",
+      "department": "Operations",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Transmission Rights - 623",
+      "sender": "Gas Operations",
+      "to": "Commercial Team",
+      "date": "Jun 30, 2001",
+      "body": "Transmission rights allocation for Q3 finalized. Attached spreadsheet shows capacity by delivery point.",
+      "department": "Operations",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Agreement Amendment - 412",
+      "sender": "Elizabeth Sager",
+      "to": "Sara Shackleton",
+      "date": "Jul 15, 2001",
+      "body": "Amendment to master agreement attached. Key changes highlighted in yellow for your review.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Please Review - 234",
+      "sender": "Vince Kaminski",
+      "to": "Research Team",
+      "date": "Aug 22, 2001",
+      "body": "Draft research report attached for your input. Please send comments by end of week.",
+      "department": "Trading",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Generation Outage Report - 867",
+      "sender": "Power Operations",
+      "to": "Trading Desk",
+      "date": "Sep 10, 2001",
+      "body": "Unplanned outage at major California facility. Expected duration 48-72 hours. Market impact assessment underway.",
+      "department": "Operations",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Legal Opinion Request - 345",
+      "sender": "Mark Haedicke",
+      "to": "Legal Department",
+      "date": "Oct 5, 2001",
+      "body": "Requesting legal opinion on proposed transaction structure. Time-sensitive - need response by Wednesday.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Follow Up - 178",
+      "sender": "James Steffes",
+      "to": "Richard Shapiro",
+      "date": "Feb 8, 2001",
+      "body": "Following up on our discussion from Monday. Have you had a chance to review the proposal?",
+      "department": "Executive",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Market Intelligence - 723",
+      "sender": "Trading Analytics",
+      "to": "Louise Kitchen",
+      "date": "Mar 28, 2001",
+      "body": "Competitor analysis update attached. Notable changes in market positioning observed in western region.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Policy Change Notice - 456",
+      "sender": "Compliance Team",
+      "to": "All Departments",
+      "date": "Apr 30, 2001",
+      "body": "Updated trading policy effective May 1st. All personnel must acknowledge receipt and understanding.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Reminder - 589",
+      "sender": "HR Department",
+      "to": "Department Managers",
+      "date": "Jun 12, 2001",
+      "body": "Reminder: Performance reviews due by end of month. Please schedule meetings with direct reports.",
+      "department": "Other",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Supply/Demand Analysis - 934",
+      "sender": "Research Team",
+      "to": "Trading Management",
+      "date": "Jul 25, 2001",
+      "body": "Updated supply/demand forecast for Q4. Key assumptions and sensitivities detailed in report.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Audit Documentation - 267",
+      "sender": "Finance Department",
+      "to": "All Cost Centers",
+      "date": "Aug 5, 2001",
+      "body": "External audit begins September 1st. Please ensure all documentation is organized and accessible.",
+      "department": "Finance",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Status Report - 678",
+      "sender": "Project Management",
+      "to": "Executive Team",
+      "date": "Sep 18, 2001",
+      "body": "Weekly status report attached. All major projects on track. One minor delay noted in IT systems upgrade.",
+      "department": "Operations",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Weather Impact Assessment - 145",
+      "sender": "Meteorology Desk",
+      "to": "Trading Floor",
+      "date": "Oct 28, 2001",
+      "body": "Winter weather forecast update. Above-normal temperatures expected through November. Reduced heating demand likely.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Terms and Conditions - 823",
+      "sender": "Legal Department",
+      "to": "Sales Team",
+      "date": "Nov 15, 2001",
+      "body": "Updated standard terms and conditions attached. Please use for all new customer agreements effective immediately.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Weekly Summary - 390",
+      "sender": "Division Head",
+      "to": "All Staff",
+      "date": "Dec 7, 2001",
+      "body": "Weekly highlights and achievements. Thank you all for your hard work this quarter.",
+      "department": "Executive",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Congestion Report - 512",
+      "sender": "Grid Operations",
+      "to": "Trading Desk",
+      "date": "Jan 15, 2001",
+      "body": "Significant congestion on Path 15 expected through end of month. Recommend adjusting positions accordingly.",
+      "department": "Operations",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Litigation Update - 678",
+      "sender": "Outside Counsel",
+      "to": "Legal Team",
+      "date": "Feb 22, 2001",
+      "body": "Status update on pending matters. Discovery deadline extended. Motion hearing scheduled for March.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "Quick Question - 234",
+      "sender": "Analyst",
+      "to": "Senior Trader",
+      "date": "Mar 8, 2001",
+      "body": "Quick question about the pricing model. Can we discuss when you have a moment?",
+      "department": "Trading",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Power Price Volatility Analysis",
+      "sender": "Vince Kaminski",
+      "to": "Risk Committee",
+      "date": "Apr 5, 2001",
+      "body": "Quantitative analysis of recent price volatility attached. Recommend reviewing risk limits given current market conditions.",
+      "department": "Finance",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "ISDA Master Agreement Review",
+      "sender": "Sara Shackleton",
+      "to": "Counterparty Relations",
+      "date": "May 18, 2001",
+      "body": "Standard ISDA negotiations proceeding. Key issues remain around credit support and termination events.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    },
+    {
+      "subject": "All Hands Meeting Announcement",
+      "sender": "Kenneth Lay",
+      "to": "All Employees",
+      "date": "Jun 1, 2001",
+      "body": "Please join us for the quarterly all-hands meeting next Thursday. State of the company presentation followed by Q&A.",
+      "department": "Executive",
+      "topic": "Internal Comms"
+    },
+    {
+      "subject": "Natural Gas Basis Differential",
+      "sender": "Gas Trading",
+      "to": "Portfolio Management",
+      "date": "Jul 10, 2001",
+      "body": "Basis differential between Henry Hub and SoCal widening. Opportunity to capture spread through physical delivery.",
+      "department": "Trading",
+      "topic": "Energy Markets"
+    },
+    {
+      "subject": "Confidentiality Agreement",
+      "sender": "M&A Team",
+      "to": "Legal Department",
+      "date": "Aug 28, 2001",
+      "body": "NDA required for potential acquisition target. Please prepare standard confidentiality agreement for review.",
+      "department": "Legal",
+      "topic": "Legal/Contracts"
+    }
+  ],
+  "embeddings": {
+    "minilm": [
+      [3.2, 2.1], [-2.1, 3.5], [1.5, -2.8], [-4.2, -1.5], [2.8, 1.5],
+      [-0.5, -3.2], [-1.8, 3.2], [0.2, 0.5], [3.5, 2.5], [1.2, -2.5],
+      [-2.5, 2.8], [-3.8, -2.8], [2.5, 1.8], [0.8, 0.2], [1.8, -1.8],
+      [2.9, 2.3], [-2.3, 3.1], [0.5, 0.8], [3.1, 1.8], [-1.5, 3.5],
+      [0.3, 0.3], [2.6, 2.0], [-2.0, 3.3], [0.6, 0.6], [3.8, 2.8],
+      [-2.8, 2.5], [0.4, 0.4], [2.2, 1.2], [-1.2, 3.8], [0.1, 0.1],
+      [2.4, 1.6], [-2.6, 2.2], [0.7, 0.7], [3.0, 2.2], [-1.9, 3.0],
+      [0.9, 0.9], [3.3, 2.6], [-3.0, 1.8], [0.0, 0.0], [3.6, 2.4],
+      [-2.4, 3.6], [-0.1, -0.1], [2.0, 1.0], [-1.0, 4.0], [1.0, 1.0],
+      [1.6, -2.2], [-2.2, 3.4], [0.2, 0.2], [2.7, 1.4], [-1.4, 3.7]
+    ],
+    "legal": [
+      [1.8, 3.5], [-3.5, 2.1], [0.5, -1.5], [-2.8, -2.5], [1.5, 3.2],
+      [-1.2, -2.0], [-3.2, 1.8], [1.5, 1.8], [2.2, 3.8], [0.2, -1.2],
+      [-3.8, 1.5], [-1.5, -3.5], [1.2, 3.0], [2.0, 1.5], [0.8, -0.8],
+      [1.6, 3.6], [-3.6, 1.9], [1.8, 2.0], [2.0, 3.2], [-3.0, 2.2],
+      [1.6, 1.6], [1.3, 3.3], [-3.3, 2.0], [1.9, 1.9], [2.5, 4.0],
+      [-4.0, 1.2], [1.7, 1.7], [1.0, 2.8], [-2.8, 2.5], [1.4, 1.4],
+      [1.1, 3.0], [-3.5, 1.0], [2.0, 2.0], [1.8, 3.5], [-3.2, 1.8],
+      [2.2, 2.2], [2.1, 3.9], [-4.2, 0.8], [1.3, 1.3], [2.4, 3.7],
+      [-3.9, 2.4], [1.2, 1.2], [0.8, 2.5], [-2.5, 2.8], [2.3, 2.3],
+      [0.6, -0.9], [-3.4, 2.1], [1.5, 1.5], [1.4, 2.7], [-2.7, 2.6]
+    ]
+  },
+  "metadata": {
+    "count": 50,
+    "models": ["minilm", "legal"],
+    "generated": "2025-01-05",
+    "description": "Sample Enron email embeddings for demonstration"
+  }
+}
